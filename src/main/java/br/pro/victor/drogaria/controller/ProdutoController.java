@@ -29,8 +29,6 @@ public class ProdutoController {
 	
 	@PostMapping
 	public Produto inserir(@RequestBody Produto produto) {
-		//Manejo de erro ainda não implementado
-		//Alterar mensagem para o caso em que a categoria já foi implementada
 		Produto produtoSalvo = produtoService.inserir(produto);
 		return produtoSalvo; 
 	}
