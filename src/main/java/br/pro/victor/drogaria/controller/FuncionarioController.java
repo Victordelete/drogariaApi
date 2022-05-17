@@ -46,7 +46,5 @@ public class FuncionarioController {
 		Funcionario funcionarioEd = funcionarioService.editar(funcionario);
 		return funcionarioEd; 
 	}
-	
-	
-	
+		
 }

@@ -20,10 +20,10 @@ import lombok.NoArgsConstructor;
 public class Categoria {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) //Id geredado automatimaticamente
-	private Short codigo;
+	private Short codigoCategoria;
 	
 	//String com o nome da minha Categoria
 	@Column(length = 50, nullable = false, unique = true)
-	private String nome; 
+	private String nomeCategoria; 
 	
 }

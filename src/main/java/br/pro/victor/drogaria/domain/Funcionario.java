@@ -1,5 +1,7 @@
 //Classe com as definições para funcionários. 
-//
+
+
+//GERAÇÃO DE SERVICE EM DESENVOLVIMENTO
 
 package br.pro.victor.drogaria.domain;
 
@@ -28,6 +30,14 @@ public class Funcionario {
 	
 	@Column(length = 50, nullable = false, unique = false)
 	private String nomeFuncionario;
+	
+	//cada funcionário tem um usuário único como o código
+	@Column(length = 50, nullable = false, unique = true)
+	private String usuarioFuncionario; 
+	
+	//Geração e tratamento do Hash gerado em FuncionarioServicE
+	@Column(length = 50, nullable = false, unique = false)
+	private String senhaHashFuncionario; 
 	
 	//Seria melhor criar uma tabela com os cargos existentes
 	//e referenciar, porém vai ser uma melhoria futura. 

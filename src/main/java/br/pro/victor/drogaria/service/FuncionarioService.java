@@ -51,7 +51,6 @@ public class FuncionarioService {
 			throw new RecursoNaoEncontradoException();
 		}
 		//caso o cadastro exista eu salvo na mesma posição
-		Funcionario funcionarioEd = resultado.get();
 		funcionarioRepository.save(funcionario);
 		
 		return funcionario; 
